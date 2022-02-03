@@ -1,6 +1,7 @@
 [MASTER]
 
 ignore=tests,index.py
+load-plugins=pylint.extensions.mccabe
 
 [MESSAGE CONTROL]
 
@@ -90,6 +91,13 @@ disable=print-statement,
 
 [FORMAT]
 
+max-line-length=110
+
 [REFACTORING]
 
+max-nested-blocks=2
+
 [DESIGN]
+
+max-statements=20
+max-complexity=3
